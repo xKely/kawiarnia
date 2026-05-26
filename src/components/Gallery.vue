@@ -37,44 +37,44 @@ const headerRef = ref(null);
 const galleryItems = ref([
   {
     id: 1,
-    src: "/43952d39-3ac7-42e5-8dbb-2a0cd48089db.jpg",
+    src: "/sweet-strawberry-tea.jpg",
     className: "n1",
-    alt: "Zdjęcie z menu 1",
+    alt: "Sweet Strawberry Tea",
     caption: "Sweet Strawberry Tea 🍰"
   },
   {
     id: 2,
-    src: "/44632004-f46f-4bc9-8b9d-f5b28d2dd67b.jpg",
+    src: "/sernik-truskawkowa-rozkosz.jpg",
     className: "n2",
-    alt: "Zdjęcie z menu 2",
+    alt: "Sernik „Truskawkowa Rozkosz”",
     caption: "Sernik „Truskawkowa Rozkosz” 🍓"
   },
   {
     id: 3,
-    src: "/a964ad3f-3b7a-4d08-ad66-3cfe7bd6f383.jpg",
+    src: "/sernik-z-lodami.jpg",
     className: "n3",
-    alt: "Zdjęcie z menu 3",
-    caption: "Sernik „Truskawkowa Rozkosz” z loadmi 🥞"
+    alt: "Sernik „Truskawkowa Rozkosz” z lodami",
+    caption: "Sernik „Truskawkowa Rozkosz” z lodami 🥞"
   },
   {
-    id:4,
-    src: "/e33ca3a8-f526-45f4-9e94-9b672c8955ab.jpg",
+    id: 4,
+    src: "/strawberry-matcha.jpg",
     className: "n5",
-    alt: "Zdjęcie z menu 5",
+    alt: "Strawberry Matcha",
     caption: "Strawberry Matcha 🥯"
   },
   {
     id: 5,
-    src: "/f09c31da-a23f-4717-ad76-21793f2aae6d.jpg",
+    src: "/truskawcino.jpg",
     className: "n6",
-    alt: "Zdjęcie z menu 6",
+    alt: "Truskawcino",
     caption: "Truskawcino ☕"
   },
   {
     id: 6,
-    src: "/fe15a9ab-7f58-429d-b6cf-1b2859ecd738.jpg",
+    src: "/latte-retro.jpg",
     className: "n7",
-    alt: "Zdjęcie z menu 7",
+    alt: "Latte Retro",
     caption: "Latte Retro 🌟"
   }
 ]);

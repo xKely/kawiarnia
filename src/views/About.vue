@@ -49,35 +49,7 @@
       </div>
     </section>
 
-    <!-- SEKCJA STREF W LOKALU (Z BIZNESPLANU) -->
-    <section class="zones-section" ref="zonesRef">
-      <h2 class="section-title">Nasze <span class="highlight-small green-highlight">Strefy</span></h2>
-      <p class="section-desc">Przestrzeń w lokalu podzieliliśmy na trzy strefy, żeby każdy czuł się u nas swobodnie.</p>
-      
-      <div class="zones-grid">
-        <!-- Strefa przy oknie -->
-        <div class="zone-card yellow-card">
-          <span class="zone-icon">💻</span>
-          <h3>Strefa przy oknie</h3>
-          <p>Dedykowana do pracy i nauki. Wygodne stoliki pod oknem, gniazdka pod ręką i szybkie Wi-Fi do dyspozycji.</p>
-        </div>
-        
-        <!-- Strefa rodzinna -->
-        <div class="zone-card pink-card">
-          <span class="zone-icon">🧸</span>
-          <h3>Strefa rodzinna</h3>
-          <p>Miejsca dla większych grup oraz bezpieczny kącik zabaw z zabawkami i książkami dla dzieciaków.</p>
-        </div>
-        
-        <!-- Strefa zdjęciowa -->
-        <div class="zone-card green-card">
-          <span class="zone-icon">📸</span>
-          <h3>Strefa zdjęciowa</h3>
-          <p>Nasza retro wizytówka z autentycznymi fotelami, lampami z lat 60. i neonem. Stworzona do pamiątkowych kadrów.</p>
-        </div>
-      </div>
-    </section>
-
+    
     <!-- AKTUALNOŚCI (NEWSBOARD) -->
     <section class="news-section" ref="newsRef">
       <div class="news-board">
