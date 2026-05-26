@@ -73,7 +73,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
-
+//ez
 // Dane do osi czasu - łatwe w edycji
 const historyData = [
   {
