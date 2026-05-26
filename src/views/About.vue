@@ -107,7 +107,7 @@ const historyData = [
   {
     date: "Wiosna 2025",
     title: "Pierwsze plany",
-    desc: "Szybka kawa na mieście i pomysł: robimy kawiarnię inspirowaną amerykańskimi dinerami lat 60. Bez kompromisów.",
+    desc: "Szybka kawa na mieście i pomysł: robimy kawiarnię inspirowaną stylem retro z lat 60. Bez kompromisów.",
     bgColor: "#FFFFE0", // Yellow
     shadowColor: "#111"
   },
@@ -120,8 +120,8 @@ const historyData = [
   },
   {
     date: "Zima 2025",
-    title: "Prace remontowe",
-    desc: "Kładzenie klasycznej czarno-białej szachownicy na podłodze, malowanie ścian na różowo i wieszanie pierwszych neonów.",
+    title: "Tutaj zaczęła się nasza przygoda",
+    desc: "Zakup mebli i wyposażenia itp.",
     bgColor: "#90EE90", // Green
     shadowColor: "#111"
   },
@@ -136,7 +136,7 @@ const historyData = [
 
 const teamMembers = [
   {
-    name: "Katarzyna",
+    name: "Aleksandra",
     role: "Właścicielka",
     emoji: "😎",
     bgColor: "#F4C2C2",
@@ -144,36 +144,36 @@ const teamMembers = [
     tags: ["#Właścicielka", "#Lata60", "#Kawa"]
   },
   {
-    name: "Aleksandra",
-    role: "Główny Barista",
+    name: "Katarzyna",
+    role: "Menadżerka",
     emoji: "☕",
     bgColor: "#90EE90",
-    bio: "Mistrz latte art i selekcji ziaren. Potrafi wyczarować idealne Truskawcino o każdej porze dnia.",
-    tags: ["#Barista", "#LatteArt", "#Kofeina"]
+    bio: "Jest mózgiem i sercem operacyjnym kawiarni. Odpowiada za finanse, grafiki i dbanie o to, żeby obsługa wiedziała co ma robić.",
+    tags: ["#Menadżerka", "#LatteArt", "#Kofeina"]
   },
   {
-    name: "TEST",
-    role: "Kelnerka",
+    name: "Patryk",
+    role: "Kelner",
     emoji: "🍰",
     bgColor: "#FFFFE0",
-    bio: "Zawsze uśmiechnięta, dba o to, żeby na Waszym stoliku nigdy nie brakowało słodkości i dobrej energii.",
-    tags: ["#Obsługa", "#Uśmiech", "#Diner"]
+    bio: "W naszej obsłudze trzymamy poziom. Patryk ogarnie Wasze zamówienie, doradzi ciasto i zawsze znajdzie dobre słowo.",
+    tags: ["#Kelner", "#Uśmiech", "#Lata60"]
   },
   {
-    name: "TEST",
-    role: "Cukiernik",
+    name: "Maks",
+    role: "Barista",
     emoji: "👨‍🍳",
     bgColor: "#F4C2C2",
-    bio: "Autor naszych autorskich ciast, w tym słynnego sernika Truskawkowa Rozkosz. Piecze z pasją i według tradycyjnych receptur.",
-    tags: ["#Cukiernik", "#Słodkości", "#Wypieki"]
+    bio: "Specjalista od mleka i ziaren. Potrafi wyczarować idealne Truskawcino o każdej porze dnia. Zawsze chętny do rozmowy o kawie.",
+    tags: ["#Barista", "#Kofeina", "#LatteArt"]
   },
   {
-    name: "TEST",
-    role: "Wsparcie biurowe",
+    name: "Vika",
+    role: "Marketing",
     emoji: "📊",
     bgColor: "#FFFFE0",
-    bio: "Ogarnia faktury, podatki i całą papierkową robotę za kulisami, żebyśmy my mogli skupić się na parzeniu dobrej kawy.",
-    tags: ["#Biuro", "#Faktury", "#Porządek"]
+    bio: "Za monitorem i telefonem. Odpowiada za relacje z Wami w sieci, social media i pilnuje, żeby media społecznościowe wyglądały tak dobrze, jak nasza kawa.",
+    tags: ["#Marketing", "#Kofeina", "#LatteArt"]
   }
 ];
 

@@ -15,7 +15,7 @@
         </h1>
         
         <p class="subtitle" ref="subtitleRef">
-          Retro kawiarnia w Nowej Hucie. Wpadnij na autorskie Truskawcino, usiądź w kultowym fotelu i poczuj klimat amerykańskiego dineru z lat 60.
+          Retro kawiarnia w Nowej Hucie. Wpadnij na autorskie Truskawcino, usiądź w kultowym fotelu i poczuj klimat lat 60.
         </p>
         
         <div class="action-wrapper" ref="btnRef">

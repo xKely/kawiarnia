@@ -3,51 +3,19 @@
   <section class="gallery-neo" ref="galleryRef">
     
     <div class="gallery-header" ref="headerRef">
-      <h2 class="title">Złapane w <span class="highlight">Kadrze</span></h2>
-      <p class="subtitle">Wnętrze, ludzie i wypieki, dla których stracisz głowę.</p>
+      <h2 class="title">Nasze <span class="highlight">Specjały</span></h2>
+      <p class="subtitle">Pyszności prosto z naszego menu retro.</p>
     </div>
 
     <div class="gallery-grid">
-      <!-- Używamy 6 przykładowych zdjęć. Klasy n1-n6 odpowiadają za różne rotacje i kolory cieni -->
-      <div class="gallery-item n1" ref="item1">
+      <div 
+        v-for="item in galleryItems" 
+        :key="item.id" 
+        :class="['gallery-item', item.className]"
+      >
         <div class="polaroid">
-          <img src="/gallery-1.jpg" alt="Zdjęcie kawiarni 1" />
-          <div class="polaroid-caption">Sernik Nowojorski 🍰</div>
-        </div>
-      </div>
-      
-      <div class="gallery-item n2" ref="item2">
-        <div class="polaroid">
-          <img src="/gallery-2.jpg" alt="Zdjęcie kawiarni 2" />
-          <div class="polaroid-caption">Różowy Vibe 🦩</div>
-        </div>
-      </div>
-      
-      <div class="gallery-item n3" ref="item3">
-        <div class="polaroid">
-          <img src="/gallery-3.jpg" alt="Zdjęcie kawiarni 3" />
-          <div class="polaroid-caption">Ekipa w akcji ✌️</div>
-        </div>
-      </div>
-      
-      <div class="gallery-item n4" ref="item4">
-        <div class="polaroid">
-          <img src="/gallery-4.jpg" alt="Zdjęcie kawiarni 4" />
-          <div class="polaroid-caption">Truskawcino 🍓</div>
-        </div>
-      </div>
-
-      <div class="gallery-item n5" ref="item5">
-        <div class="polaroid">
-          <img src="/gallery-5.jpg" alt="Zdjęcie kawiarni 5" />
-          <div class="polaroid-caption">Klimat lat 60. 📻</div>
-        </div>
-      </div>
-
-      <div class="gallery-item n6" ref="item6">
-        <div class="polaroid">
-          <img src="/gallery-6.jpg" alt="Zdjęcie kawiarni 6" />
-          <div class="polaroid-caption">Nasze ziarna ☕</div>
+          <img :src="item.src" :alt="item.alt" />
+          <div class="polaroid-caption">{{ item.caption }}</div>
         </div>
       </div>
     </div>
@@ -65,6 +33,52 @@ gsap.registerPlugin(ScrollTrigger);
 const galleryRef = ref(null);
 const headerRef = ref(null);
 
+// Dynamiczna lista zdjęć - do łatwego powiązania z menu
+const galleryItems = ref([
+  {
+    id: 1,
+    src: "/43952d39-3ac7-42e5-8dbb-2a0cd48089db.jpg",
+    className: "n1",
+    alt: "Zdjęcie z menu 1",
+    caption: "Sweet Strawberry Tea 🍰"
+  },
+  {
+    id: 2,
+    src: "/44632004-f46f-4bc9-8b9d-f5b28d2dd67b.jpg",
+    className: "n2",
+    alt: "Zdjęcie z menu 2",
+    caption: "Sernik „Truskawkowa Rozkosz” 🍓"
+  },
+  {
+    id: 3,
+    src: "/a964ad3f-3b7a-4d08-ad66-3cfe7bd6f383.jpg",
+    className: "n3",
+    alt: "Zdjęcie z menu 3",
+    caption: "Sernik „Truskawkowa Rozkosz” z loadmi 🥞"
+  },
+  {
+    id:4,
+    src: "/e33ca3a8-f526-45f4-9e94-9b672c8955ab.jpg",
+    className: "n5",
+    alt: "Zdjęcie z menu 5",
+    caption: "Strawberry Matcha 🥯"
+  },
+  {
+    id: 5,
+    src: "/f09c31da-a23f-4717-ad76-21793f2aae6d.jpg",
+    className: "n6",
+    alt: "Zdjęcie z menu 6",
+    caption: "Truskawcino ☕"
+  },
+  {
+    id: 6,
+    src: "/fe15a9ab-7f58-429d-b6cf-1b2859ecd738.jpg",
+    className: "n7",
+    alt: "Zdjęcie z menu 7",
+    caption: "Latte Retro 🌟"
+  }
+]);
+
 onMounted(() => {
   // 1. Animacja wejścia nagłówka
   gsap.fromTo(headerRef.value,
@@ -80,22 +94,22 @@ onMounted(() => {
 
   // 2. Kaskadowe (stagger) "wyskakiwanie" polaroidów z różnymi rotacjami
   gsap.fromTo(".gallery-item",
-    { scale: 0.5, opacity: 0, rotation: () => gsap.utils.random(-20, 20) }, // Startują z losowych, mocnych kątów
+    { scale: 0.5, opacity: 0, rotation: () => gsap.utils.random(-20, 20) },
     {
       scale: 1, 
       opacity: 1, 
       rotation: (index, target) => {
-        // Wracają do swoich zdefiniowanych w CSS kątów
         if (target.classList.contains('n1')) return -4;
         if (target.classList.contains('n2')) return 3;
         if (target.classList.contains('n3')) return -2;
         if (target.classList.contains('n4')) return 5;
         if (target.classList.contains('n5')) return -5;
         if (target.classList.contains('n6')) return 2;
+        if (target.classList.contains('n7')) return -3;
         return 0;
       },
       duration: 0.8,
-      stagger: 0.15, // Kolejne zdjęcia pojawiają się z opóźnieniem
+      stagger: 0.15,
       ease: 'back.out(1.7)',
       scrollTrigger: {
         trigger: ".gallery-grid",
@@ -209,7 +223,7 @@ onMounted(() => {
   width: 100%;
   text-align: center;
   font-family: 'Pacifico', cursive;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #111;
 }
 
@@ -233,6 +247,9 @@ onMounted(() => {
 
 .n6 { transform: rotate(2deg); }
 .n6 .polaroid { box-shadow: 12px 12px 0px #F4C2C2; }
+
+.n7 { transform: rotate(-3deg); margin-top: -10px; }
+.n7 .polaroid { box-shadow: 12px 12px 0px #90EE90; }
 
 /* HOVER EFFECT - ZDJĘCIE OŻYWA */
 .gallery-item:hover {

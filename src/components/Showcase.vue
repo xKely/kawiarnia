@@ -34,10 +34,10 @@
       <div class="text-side" ref="textRef">
         <h2 class="title">
           Poczuj klimat <br>
-          <span class="highlight-box">amerykańskich</span> dinerów
+          <span class="highlight-box">lat</span> 60.
         </h2>
         <p class="description">
-          Stworzyliśmy przestrzeń w stylu retro dinerów. Odcienie baby pink, truskawkowa czerwień i detale z epoki.
+          Stworzyliśmy przestrzeń w stylu retro lat 60. Odcienie baby pink, truskawkowa czerwień i detale z epoki.
         </p>
         <p class="description">
           Napijesz się u nas autorskiego Truskawcino albo klasycznej kawy. To miejsce stworzone do spotkań ze znajomymi i chillu przy dobrej muzyce.

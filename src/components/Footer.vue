@@ -30,11 +30,6 @@
         <p class="brand-desc">
           Autorska kawiarnia w Krakowie. Dobre espresso, domowe desery i retro klimat lat 60.
         </p>
-        <div class="socials">
-          <a href="#" class="social-btn">Fb</a>
-          <a href="#" class="social-btn">Ig</a>
-          <a href="#" class="social-btn">Tt</a>
-        </div>
       </div>
 
       <!-- Kolumna 2: Karta z godzinami -->
@@ -59,15 +54,7 @@
         </div>
       </div>
 
-      <!-- Kolumna 4: Newsletter (CTA) -->
-      <div class="footer-col newsletter-col" ref="col4Ref">
-        <h4 class="newsletter-title">Zgarnij -10% zniżki!</h4>
-        <p class="newsletter-desc">Zostaw swój e-mail, a wyślemy Ci kod na 10% rabatu do wykorzystania w kawiarni.</p>
-        <form class="newsletter-form" @submit.prevent="handleSubscribe">
-          <input type="email" placeholder="Twój adres e-mail" required />
-          <button type="submit">Dajesz!</button>
-        </form>
-      </div>
+
 
     </div>
 
